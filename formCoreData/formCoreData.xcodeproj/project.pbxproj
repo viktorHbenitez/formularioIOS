@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB59E59E1CAD91B700DE89D5 /* eyeApp.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59E59D1CAD91B700DE89D5 /* eyeApp.png */; };
+		CB59E5A01CAD920900DE89D5 /* eyeApp2.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59E59F1CAD920900DE89D5 /* eyeApp2.png */; };
+		CB59E5A21CAD95C500DE89D5 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59E5A11CAD95C500DE89D5 /* send.png */; };
+		CB59E5A41CAD95FD00DE89D5 /* facesing.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59E5A31CAD95FD00DE89D5 /* facesing.png */; };
 		CBC6813C1CAC747C00A4180F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC6813B1CAC747C00A4180F /* AppDelegate.swift */; };
 		CBC6813E1CAC747C00A4180F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC6813D1CAC747C00A4180F /* ViewController.swift */; };
 		CBC681411CAC747C00A4180F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC6813F1CAC747C00A4180F /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB59E59D1CAD91B700DE89D5 /* eyeApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyeApp.png; sourceTree = "<group>"; };
+		CB59E59F1CAD920900DE89D5 /* eyeApp2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyeApp2.png; sourceTree = "<group>"; };
+		CB59E5A11CAD95C500DE89D5 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
+		CB59E5A31CAD95FD00DE89D5 /* facesing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facesing.png; sourceTree = "<group>"; };
 		CBC681381CAC747C00A4180F /* formCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = formCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC6813B1CAC747C00A4180F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBC6813D1CAC747C00A4180F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +64,10 @@
 		CBC6813A1CAC747C00A4180F /* formCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				CB59E5A31CAD95FD00DE89D5 /* facesing.png */,
+				CB59E5A11CAD95C500DE89D5 /* send.png */,
+				CB59E59D1CAD91B700DE89D5 /* eyeApp.png */,
+				CB59E59F1CAD920900DE89D5 /* eyeApp2.png */,
 				CBC6813B1CAC747C00A4180F /* AppDelegate.swift */,
 				CBC6813D1CAC747C00A4180F /* ViewController.swift */,
 				CBC6813F1CAC747C00A4180F /* Main.storyboard */,
@@ -126,8 +138,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBC681491CAC747C00A4180F /* LaunchScreen.storyboard in Resources */,
+				CB59E59E1CAD91B700DE89D5 /* eyeApp.png in Resources */,
+				CB59E5A01CAD920900DE89D5 /* eyeApp2.png in Resources */,
 				CBC681461CAC747C00A4180F /* Assets.xcassets in Resources */,
 				CBC681411CAC747C00A4180F /* Main.storyboard in Resources */,
+				CB59E5A21CAD95C500DE89D5 /* send.png in Resources */,
+				CB59E5A41CAD95FD00DE89D5 /* facesing.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +306,7 @@
 				CBC6814F1CAC747C00A4180F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -17,24 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formulario Core Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQZ-Ac-ueM">
-                                <rect key="frame" x="164" y="96" width="272" height="93"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyeApp.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Gx-Jc-pnv">
+                                <rect key="frame" x="85" y="48" width="431" height="387"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="431" id="eQy-dA-o7E"/>
+                                    <constraint firstAttribute="height" constant="387" id="ist-cC-vLG"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="JQZ-Ac-ueM" secondAttribute="bottom" constant="411" id="Erg-U9-kfl"/>
-                            <constraint firstItem="JQZ-Ac-ueM" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="76" id="vjk-j5-oaC"/>
-                            <constraint firstItem="JQZ-Ac-ueM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zKO-GE-kPG"/>
+                            <constraint firstItem="0Gx-Jc-pnv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0Ji-Nv-Z20"/>
+                            <constraint firstItem="0Gx-Jc-pnv" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="28" id="9az-po-KLg"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="493" y="398"/>
+            <point key="canvasLocation" x="214" y="370"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="eyeApp.png" width="254" height="367"/>
+    </resources>
 </document>

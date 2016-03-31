@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sexotxt: UITextField!
     @IBOutlet weak var nombretxt: UITextField!
     
+    @IBOutlet weak var edadtxt: UITextField!
     @IBOutlet weak var validacion: UILabel!
     
     
@@ -34,6 +35,7 @@ class ViewController: UIViewController {
         let correo = emailtxt.text!
         let password = passwdtxt.text!
         let password2 = passwd2txt.text!
+        let edad = edadtxt.text!
         
         
         // Da acceso a los metos utilizados para el core data
@@ -50,9 +52,9 @@ class ViewController: UIViewController {
         if let results = try? context.executeFetchRequest(request) where results.count > 0 {
             for result in results {
                 //validamos si el Usuario ya tiene el mismo correo electronico
-                if let email = result.valueForKey("emailUsuario") as? String where email == correo,let nombreU = result.valueForKey("nombreUsuario") as? String
+                if let email = result.valueForKey("emailUsuario") as? String where email == correo
                 {
-                    validacion.text = "El usuario \(nombreU) y correo \(email) ya existe"
+                    validacion.text = "El usuario con correo \(email) ya existe !!!"
                     bandera = false
                     //print(result.valueForKey("nombreUsuario")!)
                 
@@ -72,6 +74,8 @@ class ViewController: UIViewController {
                 newUser.setValue(correo, forKey: "emailUsuario")
                 newUser.setValue(password, forKey: "passwdUsurio")
                 newUser.setValue(password2, forKey: "passwd2Usuario")
+                newUser.setValue(edad, forKey: "edadUsuario")
+
                 
                 //Lo guardamos en Core data
                 _ = try? context.save()
@@ -95,6 +99,8 @@ class ViewController: UIViewController {
                 newUser.setValue(correo, forKey: "emailUsuario")
                 newUser.setValue(password, forKey: "passwdUsurio")
                 newUser.setValue(password2, forKey: "passwd2Usuario")
+                newUser.setValue(edad, forKey: "edadUsuario")
+
             
                 //Lo guardamos en Core data
                 _ = try? context.save()
@@ -115,6 +121,7 @@ class ViewController: UIViewController {
         emailtxt.text = ""
         passwdtxt.text = ""
         passwd2txt.text = ""
+        edadtxt.text = ""
         
     }
     
