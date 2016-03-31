@@ -97,11 +97,30 @@
                         <outlet property="mensajetxt" destination="Gxs-W9-7i2" id="Liw-dS-WaD"/>
                         <outlet property="password" destination="jmJ-ha-H3j" id="rLe-7v-z6L"/>
                         <outlet property="sesion" destination="M8y-Bn-36j" id="V8f-Gi-r6p"/>
+                        <segue destination="PYX-H4-QpC" kind="show" identifier="segue1" id="URD-HD-kK7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="711" y="405"/>
+            <point key="canvasLocation" x="707" y="458"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kmU-R5-9oM">
+            <objects>
+                <viewController id="PYX-H4-QpC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pcZ-On-qUt"/>
+                        <viewControllerLayoutGuide type="bottom" id="YSc-jK-lUE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wex-4Z-ANx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZcX-uv-Mue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398" y="458"/>
         </scene>
     </scenes>
     <resources>

@@ -58,6 +58,7 @@ class ViewController: UIViewController {
             //Si encontro el usuario manda al segue correcto
             if bandera == true{
                 //pasar al segue correcto
+                self.performSegueWithIdentifier("segue1", sender: nil)
                 
             } else{
                 mensajetxt.text = "El usuario no se encuentra registrado   y/o los datos son incorrectos"
