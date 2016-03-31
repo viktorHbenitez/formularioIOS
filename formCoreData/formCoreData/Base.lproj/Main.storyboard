@@ -19,32 +19,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre Usuario" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Kam-jk-40N">
-                                <rect key="frame" x="20" y="117" width="560" height="30"/>
+                                <rect key="frame" x="20" y="36" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sexo" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="3xG-Nt-SPo">
-                                <rect key="frame" x="20" y="180" width="560" height="30"/>
+                                <rect key="frame" x="20" y="99" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electronico" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="IQy-c3-nTt">
-                                <rect key="frame" x="20" y="242" width="560" height="30"/>
+                                <rect key="frame" x="20" y="161" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="4Fs-HM-gge">
-                                <rect key="frame" x="20" y="304" width="560" height="30"/>
+                                <rect key="frame" x="20" y="223" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar Contraseña" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Hch-SE-DVZ">
-                                <rect key="frame" x="20" y="376" width="560" height="30"/>
+                                <rect key="frame" x="20" y="295" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mi-Da-tvf">
-                                <rect key="frame" x="225" y="466" width="151" height="30"/>
+                                <rect key="frame" x="225" y="351" width="151" height="30"/>
                                 <color key="backgroundColor" red="0.13638862130000001" green="0.69640306510000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="s99-d3-Eka"/>
@@ -58,14 +58,14 @@
                                     <action selector="registrarse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fjd-Cc-Tom"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFm-Xc-fq1">
-                                <rect key="frame" x="205" y="512" width="191" height="21"/>
-                                <color key="backgroundColor" red="0.59038063750000003" green="0.74652777780000001" blue="0.51768568010000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFm-Xc-fq1">
+                                <rect key="frame" x="157" y="402" width="286" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="191" id="Lh2-e6-GmV"/>
-                                    <constraint firstAttribute="height" constant="21" id="tiW-Ai-lOU"/>
+                                    <constraint firstAttribute="width" constant="286" id="Lh2-e6-GmV"/>
+                                    <constraint firstAttribute="height" constant="68" id="tiW-Ai-lOU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -81,12 +81,12 @@
                             <constraint firstItem="4Fs-HM-gge" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Shd-ku-9p5"/>
                             <constraint firstItem="Hch-SE-DVZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="U0S-5D-POn"/>
                             <constraint firstItem="4Fs-HM-gge" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZVt-5L-8xA"/>
-                            <constraint firstItem="gFm-Xc-fq1" firstAttribute="top" secondItem="7mi-Da-tvf" secondAttribute="bottom" constant="16" id="aja-CR-phX"/>
+                            <constraint firstItem="gFm-Xc-fq1" firstAttribute="top" secondItem="7mi-Da-tvf" secondAttribute="bottom" constant="21" id="aja-CR-phX"/>
                             <constraint firstItem="Hch-SE-DVZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cEM-8i-DUP"/>
                             <constraint firstAttribute="trailing" secondItem="Kam-jk-40N" secondAttribute="trailing" constant="20" id="dMS-re-SZ6"/>
-                            <constraint firstItem="7mi-Da-tvf" firstAttribute="top" secondItem="Hch-SE-DVZ" secondAttribute="bottom" constant="60" id="hp8-sB-8Hi"/>
+                            <constraint firstItem="7mi-Da-tvf" firstAttribute="top" secondItem="Hch-SE-DVZ" secondAttribute="bottom" constant="26" id="hp8-sB-8Hi"/>
                             <constraint firstItem="3xG-Nt-SPo" firstAttribute="top" secondItem="Kam-jk-40N" secondAttribute="bottom" constant="33" id="i3K-qT-yiE"/>
-                            <constraint firstItem="Kam-jk-40N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="97" id="kd2-er-YJZ"/>
+                            <constraint firstItem="Kam-jk-40N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="kd2-er-YJZ"/>
                             <constraint firstItem="IQy-c3-nTt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lzw-ac-d5k"/>
                             <constraint firstItem="4Fs-HM-gge" firstAttribute="top" secondItem="IQy-c3-nTt" secondAttribute="bottom" constant="32" id="mgP-rw-dbi"/>
                             <constraint firstItem="7mi-Da-tvf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o2V-j5-7Ka"/>
@@ -104,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="409"/>
+            <point key="canvasLocation" x="530" y="358"/>
         </scene>
     </scenes>
 </document>

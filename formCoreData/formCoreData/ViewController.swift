@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         let password = passwdtxt.text!
         let password2 = passwd2txt.text!
         
-        limpiar()
+        
         // Da acceso a los metos utilizados para el core data
         let appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
@@ -50,8 +50,8 @@ class ViewController: UIViewController {
         if let results = try? context.executeFetchRequest(request) where results.count > 0 {
             for result in results {
                 //validamos si el Usuario ya tiene el mismo correo electronico
-                if let username = result.valueForKey("nombreUsuario") as? String where username == nombre{
-                    validacion.text = "El usuario ya exite"
+                if let email = result.valueForKey("emailUsuario") as? String where email == correo{
+                    validacion.text = "El nombre de usuario y correo ya existe"
                     bandera = false
                     //print(result.valueForKey("nombreUsuario")!)
                 
@@ -76,6 +76,7 @@ class ViewController: UIViewController {
                 _ = try? context.save()
                 //print(results.valueForKey("nombreUsuario")!)
                 validacion.text = "Registro Exitoso"
+                limpiar()
             
             
             } ///end if
@@ -98,7 +99,7 @@ class ViewController: UIViewController {
                 _ = try? context.save()
                 //print(results.valueForKey("nombreUsuario")!)
                 validacion.text = "Registro Exitoso"
-            
+                limpiar()
             
         }//end else
 
@@ -122,16 +123,18 @@ class ViewController: UIViewController {
         let appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         //usaremos el context para acceder a la base de datos
         let context:NSManagedObjectContext = appDel.managedObjectContext
+        
+        print("usuarios almacenados en Core data")
         //hacemos una peticion para traer la entidad
         let request = NSFetchRequest(entityName: "Usuario")
         if let results = try? context.executeFetchRequest(request) where results.count > 0 {
             for result in results {
-                print(result.valueForKey("nombreUsuario")!)
+                print(result)
                 
             }//end for
         }//end if
-    
-    }
+        
+    } //end obtener
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
