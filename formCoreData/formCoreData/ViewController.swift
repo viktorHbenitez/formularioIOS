@@ -50,8 +50,9 @@ class ViewController: UIViewController {
         if let results = try? context.executeFetchRequest(request) where results.count > 0 {
             for result in results {
                 //validamos si el Usuario ya tiene el mismo correo electronico
-                if let email = result.valueForKey("emailUsuario") as? String where email == correo{
-                    validacion.text = "El nombre de usuario y correo ya existe"
+                if let email = result.valueForKey("emailUsuario") as? String where email == correo,let nombreU = result.valueForKey("nombreUsuario") as? String
+                {
+                    validacion.text = "El usuario \(nombreU) y correo \(email) ya existe"
                     bandera = false
                     //print(result.valueForKey("nombreUsuario")!)
                 
