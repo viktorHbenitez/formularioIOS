@@ -13,6 +13,9 @@
 		CB59E5911CAD8AAE00DE89D5 /* sesionIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB59E58F1CAD8AAE00DE89D5 /* sesionIOS.xcdatamodeld */; };
 		CB59E5931CAD8AAE00DE89D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB59E5921CAD8AAE00DE89D5 /* Assets.xcassets */; };
 		CB59E5961CAD8AAE00DE89D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB59E5941CAD8AAE00DE89D5 /* LaunchScreen.storyboard */; };
+		CB59E5A61CADA10E00DE89D5 /* eyeApp.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59E5A51CADA10E00DE89D5 /* eyeApp.png */; };
+		CB59E5A81CADA39400DE89D5 /* facLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59E5A71CADA39400DE89D5 /* facLogin.png */; };
+		CB59E5AA1CADA3F800DE89D5 /* logIn.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59E5A91CADA3F800DE89D5 /* logIn.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CB59E5921CAD8AAE00DE89D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB59E5951CAD8AAE00DE89D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB59E5971CAD8AAE00DE89D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB59E5A51CADA10E00DE89D5 /* eyeApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyeApp.png; sourceTree = "<group>"; };
+		CB59E5A71CADA39400DE89D5 /* facLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facLogin.png; sourceTree = "<group>"; };
+		CB59E5A91CADA3F800DE89D5 /* logIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logIn.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 		CB59E5871CAD8AAE00DE89D5 /* sesionIOS */ = {
 			isa = PBXGroup;
 			children = (
+				CB59E5A91CADA3F800DE89D5 /* logIn.png */,
+				CB59E5A71CADA39400DE89D5 /* facLogin.png */,
+				CB59E5A51CADA10E00DE89D5 /* eyeApp.png */,
 				CB59E5881CAD8AAE00DE89D5 /* AppDelegate.swift */,
 				CB59E58A1CAD8AAE00DE89D5 /* ViewController.swift */,
 				CB59E58C1CAD8AAE00DE89D5 /* Main.storyboard */,
@@ -126,8 +135,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB59E5961CAD8AAE00DE89D5 /* LaunchScreen.storyboard in Resources */,
+				CB59E5AA1CADA3F800DE89D5 /* logIn.png in Resources */,
+				CB59E5A61CADA10E00DE89D5 /* eyeApp.png in Resources */,
 				CB59E5931CAD8AAE00DE89D5 /* Assets.xcassets in Resources */,
 				CB59E58E1CAD8AAE00DE89D5 /* Main.storyboard in Resources */,
+				CB59E5A81CADA39400DE89D5 /* facLogin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var correo: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var mensajetxt: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,13 @@ class ViewController: UIViewController {
     
     @IBAction func session(sender: AnyObject) {
         
-        let corre
+        //variable of textfield
+        let correoU = correo.text!
+        let passwordU = password.text!
+        
+        
+        var bandera = false
+        
         // Da acceso a los metos utilizados para el core data
         let appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
 
@@ -38,40 +45,24 @@ class ViewController: UIViewController {
         if let results = try? context.executeFetchRequest(request) where results.count > 0 {
             for result in results {
                 //validamos si el Usuario ya tiene el mismo correo electronico
-                if let email = result.valueForKey("emailUsuario") as? String where email == correo,
-                let nombreU = result.valueForKey("passwdUsuario") as? String where nombreU==
+                if let email = result.valueForKey("emailUsuario") as? String where email == correoU,
+                let password = result.valueForKey("passwdUsuario") as? String where password == passwordU
                 {
-                    validacion.text = "El usuario con correo \(email) ya existe !!!"
-                    bandera = false
-                    //print(result.valueForKey("nombreUsuario")!)
                     
+                    bandera = true
                 } //end if
                 
                 
             }//end for
             
-            
+            //Si encontro el usuario manda al segue correcto
             if bandera == true{
+                //pasar al segue correcto
                 
-                //Ingresamos un usuario a la base de datos del Core data
-                let newUser = NSEntityDescription.insertNewObjectForEntityForName("Usuario", inManagedObjectContext: context)
-                
-                newUser.setValue(nombre, forKey: "nombreUsuario")
-                newUser.setValue(sexo, forKey: "sexoUsuario")
-                newUser.setValue(correo, forKey: "emailUsuario")
-                newUser.setValue(password, forKey: "passwdUsurio")
-                newUser.setValue(password2, forKey: "passwd2Usuario")
-                
-                //Lo guardamos en Core data
-                _ = try? context.save()
-                //print(results.valueForKey("nombreUsuario")!)
-                validacion.text = "Registro Exitoso"
-                limpiar()
-                
-                
-            } ///end if
+            } else{
+                mensajetxt.text = "El usuario no se encuentra registrado   y/o los datos son incorrectos"
             
-            
+            }  //end if
         } //end if
 
         
