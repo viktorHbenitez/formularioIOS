@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyeApp.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nsd-6l-4E0">
-                                <rect key="frame" x="113" y="93" width="375" height="403"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nsd-6l-4E0">
+                                <rect key="frame" x="113" y="98" width="375" height="403"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="403" id="BXm-2c-XJ6"/>
                                     <constraint firstAttribute="width" constant="375" id="jTj-bW-jP1"/>
@@ -28,7 +28,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Nsd-6l-4E0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fh9-vH-EPX"/>
-                            <constraint firstItem="Nsd-6l-4E0" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="73" id="tAH-NC-YqK"/>
+                            <constraint firstItem="Nsd-6l-4E0" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="78" id="tAH-NC-YqK"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="eyeApp.png" width="226" height="319"/>
+        <image name="Icon.png" width="375" height="567"/>
     </resources>
 </document>

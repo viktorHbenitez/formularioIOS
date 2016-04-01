@@ -19,7 +19,7 @@ class FormViewController: UIViewController {
     @IBOutlet weak var generotxt: UITextField!
     @IBOutlet weak var validaciontxt: UILabel!
     @IBOutlet weak var registrarse: UIButton!
-
+    @IBOutlet weak var passtxt: UILabel!
     
     
     
@@ -61,7 +61,12 @@ class FormViewController: UIViewController {
                     bandera = false
                     //print(result.valueForKey("nombreUsuario")!)
                     
-                } //end if
+                }
+                
+                if password != password2 {
+                    passtxt.text = "Las contraseñas no son iguales"
+                    bandera = false
+                }
                 
                 
             }//end for
@@ -78,6 +83,7 @@ class FormViewController: UIViewController {
                 newUser.setValue(password, forKey: "passwdUsurio")
                 newUser.setValue(password2, forKey: "passwd2Usuario")
                 newUser.setValue(edad, forKey: "edadUsuario")
+                newUser.setValue("0", forKey: "lastResult")
                 
                 
                 //Lo guardamos en Core data
@@ -103,6 +109,7 @@ class FormViewController: UIViewController {
             newUser.setValue(password, forKey: "passwdUsurio")
             newUser.setValue(password2, forKey: "passwd2Usuario")
             newUser.setValue(edad, forKey: "edadUsuario")
+            newUser.setValue("0", forKey: "lastResult")
             
             
             //Lo guardamos en Core data
@@ -127,6 +134,8 @@ class FormViewController: UIViewController {
         passwdtxt.text = ""
         passwd2txt.text = ""
         edadtxt.text = ""
+        passtxt.text = ""
+//        validaciontxt.text = ""
         
     } //endLimpiar
     
@@ -137,7 +146,7 @@ class FormViewController: UIViewController {
         //usaremos el context para acceder a la base de datos
         let context:NSManagedObjectContext = appDel.managedObjectContext
         
-        print("usuarios almacenados en Core data")
+        print("USUARIOS ALMACENADOS EN CORE DATA")
         //hacemos una peticion para traer la entidad
         let request = NSFetchRequest(entityName: "Usuario")
         if let results = try? context.executeFetchRequest(request) where results.count > 0 {
