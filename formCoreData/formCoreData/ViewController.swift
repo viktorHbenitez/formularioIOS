@@ -123,7 +123,7 @@ class ViewController: UIViewController {
         passwd2txt.text = ""
         edadtxt.text = ""
         
-    }
+    } //endLimpiar
     
     
     func obtener(){
@@ -144,11 +144,11 @@ class ViewController: UIViewController {
         
     } //end obtener
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    }
+//
 
 }
 

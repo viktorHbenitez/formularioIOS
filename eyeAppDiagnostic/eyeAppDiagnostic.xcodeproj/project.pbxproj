@@ -15,6 +15,10 @@
 		CB653EE71CAEDA760040AB46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB653EE51CAEDA760040AB46 /* LaunchScreen.storyboard */; };
 		CB653EEF1CAEDBA80040AB46 /* eyeApp.png in Resources */ = {isa = PBXBuildFile; fileRef = CB653EEE1CAEDBA80040AB46 /* eyeApp.png */; };
 		CB653EF11CAEDDEF0040AB46 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB653EF01CAEDDEF0040AB46 /* FormViewController.swift */; };
+		CB653EF61CAEE0DF0040AB46 /* facesing.png in Resources */ = {isa = PBXBuildFile; fileRef = CB653EF21CAEE0DF0040AB46 /* facesing.png */; };
+		CB653EF71CAEE0DF0040AB46 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = CB653EF31CAEE0DF0040AB46 /* send.png */; };
+		CB653EF81CAEE0DF0040AB46 /* eyeApp.png in Resources */ = {isa = PBXBuildFile; fileRef = CB653EF41CAEE0DF0040AB46 /* eyeApp.png */; };
+		CB653EF91CAEE0DF0040AB46 /* eyeApp2.png in Resources */ = {isa = PBXBuildFile; fileRef = CB653EF51CAEE0DF0040AB46 /* eyeApp2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		CB653EE81CAEDA760040AB46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB653EEE1CAEDBA80040AB46 /* eyeApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyeApp.png; sourceTree = "<group>"; };
 		CB653EF01CAEDDEF0040AB46 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		CB653EF21CAEE0DF0040AB46 /* facesing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facesing.png; sourceTree = "<group>"; };
+		CB653EF31CAEE0DF0040AB46 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
+		CB653EF41CAEE0DF0040AB46 /* eyeApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyeApp.png; sourceTree = "<group>"; };
+		CB653EF51CAEE0DF0040AB46 /* eyeApp2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyeApp2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 		CB653ED81CAEDA750040AB46 /* eyeAppDiagnostic */ = {
 			isa = PBXGroup;
 			children = (
+				CB653EF21CAEE0DF0040AB46 /* facesing.png */,
+				CB653EF31CAEE0DF0040AB46 /* send.png */,
+				CB653EF41CAEE0DF0040AB46 /* eyeApp.png */,
+				CB653EF51CAEE0DF0040AB46 /* eyeApp2.png */,
 				CB653EEE1CAEDBA80040AB46 /* eyeApp.png */,
 				CB653ED91CAEDA750040AB46 /* AppDelegate.swift */,
 				CB653EDB1CAEDA750040AB46 /* ViewController.swift */,
@@ -134,7 +146,11 @@
 				CB653EE71CAEDA760040AB46 /* LaunchScreen.storyboard in Resources */,
 				CB653EEF1CAEDBA80040AB46 /* eyeApp.png in Resources */,
 				CB653EE41CAEDA750040AB46 /* Assets.xcassets in Resources */,
+				CB653EF61CAEE0DF0040AB46 /* facesing.png in Resources */,
+				CB653EF91CAEE0DF0040AB46 /* eyeApp2.png in Resources */,
+				CB653EF81CAEE0DF0040AB46 /* eyeApp.png in Resources */,
 				CB653EDF1CAEDA750040AB46 /* Main.storyboard in Resources */,
+				CB653EF71CAEE0DF0040AB46 /* send.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
