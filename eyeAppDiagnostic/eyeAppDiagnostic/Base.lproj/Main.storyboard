@@ -168,7 +168,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zse-18-t19" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="515" y="722"/>
+            <point key="canvasLocation" x="521" y="636"/>
+        </scene>
+        <!--Sesión -->
+        <scene sceneID="H0w-hL-qFe">
+            <objects>
+                <viewController id="zf1-HR-is8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yru-Y9-499"/>
+                        <viewControllerLayoutGuide type="bottom" id="5bW-lw-oMY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p6A-7R-Vps">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sesión " image="session.png" selectedImage="sessionUp.png" id="72k-09-Ehr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhO-XN-4qb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-215" y="1164"/>
         </scene>
         <!--Inicio-->
         <scene sceneID="otg-A0-cZh">
@@ -200,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bim-x7-ulk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605" y="15"/>
+            <point key="canvasLocation" x="533" y="-41"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xKd-ca-v0h">
@@ -215,6 +234,7 @@
                     <connections>
                         <segue destination="8qS-oM-NLC" kind="relationship" relationship="viewControllers" id="36z-zd-28f"/>
                         <segue destination="deJ-Hp-ooC" kind="relationship" relationship="viewControllers" id="iYg-Db-XEk"/>
+                        <segue destination="zf1-HR-is8" kind="relationship" relationship="viewControllers" id="7E7-gz-mOO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mOC-O4-XCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -229,6 +249,8 @@
         <image name="formUP.png" width="25" height="25"/>
         <image name="home.png" width="25" height="25"/>
         <image name="send.png" width="250" height="46"/>
+        <image name="session.png" width="25" height="25"/>
+        <image name="sessionUp.png" width="25" height="25"/>
         <image name="upHome.png" width="25" height="25"/>
     </resources>
 </document>
