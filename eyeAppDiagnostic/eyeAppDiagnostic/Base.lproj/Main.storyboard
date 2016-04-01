@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lq1-ws-3st">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Registro-->
+        <scene sceneID="wlC-63-Hte">
+            <objects>
+                <viewController id="deJ-Hp-ooC" customClass="FormViewController" customModule="eyeAppDiagnostic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V1g-gm-Qjs"/>
+                        <viewControllerLayoutGuide type="bottom" id="2yY-zL-Ngn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qfv-tE-gHl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Registro" id="NrK-zC-woo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zse-18-t19" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605" y="676"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="otg-A0-cZh">
+            <objects>
+                <viewController id="8qS-oM-NLC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R6x-Of-IbI"/>
+                        <viewControllerLayoutGuide type="bottom" id="MdH-2R-tAK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Mh-YD-Kb4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyeApp.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eli-tW-YxG">
+                                <rect key="frame" x="95" y="51" width="411" height="404"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="404" id="jps-yu-eJG"/>
+                                    <constraint firstAttribute="width" constant="411" id="pIP-Sd-l0C"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Eli-tW-YxG" firstAttribute="top" secondItem="R6x-Of-IbI" secondAttribute="bottom" constant="31" id="BiB-0l-S2c"/>
+                            <constraint firstItem="Eli-tW-YxG" firstAttribute="centerX" secondItem="8Mh-YD-Kb4" secondAttribute="centerX" id="NXL-BV-OIg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="MDA-0Q-eDC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bim-x7-ulk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605" y="15"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xKd-ca-v0h">
+            <objects>
+                <tabBarController id="lq1-ws-3st" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="kLI-vS-LZt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8qS-oM-NLC" kind="relationship" relationship="viewControllers" id="36z-zd-28f"/>
+                        <segue destination="deJ-Hp-ooC" kind="relationship" relationship="viewControllers" id="iYg-Db-XEk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mOC-O4-XCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-215" y="346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eyeApp.png" width="226" height="319"/>
+    </resources>
+</document>

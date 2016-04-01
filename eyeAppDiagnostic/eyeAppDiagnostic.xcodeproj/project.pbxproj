@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB653EDA1CAEDA750040AB46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB653ED91CAEDA750040AB46 /* AppDelegate.swift */; };
+		CB653EDC1CAEDA750040AB46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB653EDB1CAEDA750040AB46 /* ViewController.swift */; };
+		CB653EDF1CAEDA750040AB46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB653EDD1CAEDA750040AB46 /* Main.storyboard */; };
+		CB653EE21CAEDA750040AB46 /* eyeAppDiagnostic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB653EE01CAEDA750040AB46 /* eyeAppDiagnostic.xcdatamodeld */; };
+		CB653EE41CAEDA750040AB46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB653EE31CAEDA750040AB46 /* Assets.xcassets */; };
+		CB653EE71CAEDA760040AB46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB653EE51CAEDA760040AB46 /* LaunchScreen.storyboard */; };
+		CB653EEF1CAEDBA80040AB46 /* eyeApp.png in Resources */ = {isa = PBXBuildFile; fileRef = CB653EEE1CAEDBA80040AB46 /* eyeApp.png */; };
+		CB653EF11CAEDDEF0040AB46 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB653EF01CAEDDEF0040AB46 /* FormViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB653ED61CAEDA750040AB46 /* eyeAppDiagnostic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eyeAppDiagnostic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB653ED91CAEDA750040AB46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB653EDB1CAEDA750040AB46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB653EDE1CAEDA750040AB46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB653EE11CAEDA750040AB46 /* eyeAppDiagnostic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eyeAppDiagnostic.xcdatamodel; sourceTree = "<group>"; };
+		CB653EE31CAEDA750040AB46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB653EE61CAEDA760040AB46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB653EE81CAEDA760040AB46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB653EEE1CAEDBA80040AB46 /* eyeApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyeApp.png; sourceTree = "<group>"; };
+		CB653EF01CAEDDEF0040AB46 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB653ED31CAEDA750040AB46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB653ECD1CAEDA750040AB46 = {
+			isa = PBXGroup;
+			children = (
+				CB653ED81CAEDA750040AB46 /* eyeAppDiagnostic */,
+				CB653ED71CAEDA750040AB46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB653ED71CAEDA750040AB46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB653ED61CAEDA750040AB46 /* eyeAppDiagnostic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB653ED81CAEDA750040AB46 /* eyeAppDiagnostic */ = {
+			isa = PBXGroup;
+			children = (
+				CB653EEE1CAEDBA80040AB46 /* eyeApp.png */,
+				CB653ED91CAEDA750040AB46 /* AppDelegate.swift */,
+				CB653EDB1CAEDA750040AB46 /* ViewController.swift */,
+				CB653EDD1CAEDA750040AB46 /* Main.storyboard */,
+				CB653EE31CAEDA750040AB46 /* Assets.xcassets */,
+				CB653EE51CAEDA760040AB46 /* LaunchScreen.storyboard */,
+				CB653EE81CAEDA760040AB46 /* Info.plist */,
+				CB653EE01CAEDA750040AB46 /* eyeAppDiagnostic.xcdatamodeld */,
+				CB653EF01CAEDDEF0040AB46 /* FormViewController.swift */,
+			);
+			path = eyeAppDiagnostic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB653ED51CAEDA750040AB46 /* eyeAppDiagnostic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB653EEB1CAEDA760040AB46 /* Build configuration list for PBXNativeTarget "eyeAppDiagnostic" */;
+			buildPhases = (
+				CB653ED21CAEDA750040AB46 /* Sources */,
+				CB653ED31CAEDA750040AB46 /* Frameworks */,
+				CB653ED41CAEDA750040AB46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eyeAppDiagnostic;
+			productName = eyeAppDiagnostic;
+			productReference = CB653ED61CAEDA750040AB46 /* eyeAppDiagnostic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB653ECE1CAEDA750040AB46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = vik;
+				TargetAttributes = {
+					CB653ED51CAEDA750040AB46 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = CB653ED11CAEDA750040AB46 /* Build configuration list for PBXProject "eyeAppDiagnostic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB653ECD1CAEDA750040AB46;
+			productRefGroup = CB653ED71CAEDA750040AB46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB653ED51CAEDA750040AB46 /* eyeAppDiagnostic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB653ED41CAEDA750040AB46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB653EE71CAEDA760040AB46 /* LaunchScreen.storyboard in Resources */,
+				CB653EEF1CAEDBA80040AB46 /* eyeApp.png in Resources */,
+				CB653EE41CAEDA750040AB46 /* Assets.xcassets in Resources */,
+				CB653EDF1CAEDA750040AB46 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB653ED21CAEDA750040AB46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB653EDC1CAEDA750040AB46 /* ViewController.swift in Sources */,
+				CB653EDA1CAEDA750040AB46 /* AppDelegate.swift in Sources */,
+				CB653EF11CAEDDEF0040AB46 /* FormViewController.swift in Sources */,
+				CB653EE21CAEDA750040AB46 /* eyeAppDiagnostic.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB653EDD1CAEDA750040AB46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB653EDE1CAEDA750040AB46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB653EE51CAEDA760040AB46 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB653EE61CAEDA760040AB46 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB653EE91CAEDA760040AB46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB653EEA1CAEDA760040AB46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB653EEC1CAEDA760040AB46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = eyeAppDiagnostic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viktor.eyeAppDiagnostic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB653EED1CAEDA760040AB46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = eyeAppDiagnostic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viktor.eyeAppDiagnostic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB653ED11CAEDA750040AB46 /* Build configuration list for PBXProject "eyeAppDiagnostic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB653EE91CAEDA760040AB46 /* Debug */,
+				CB653EEA1CAEDA760040AB46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB653EEB1CAEDA760040AB46 /* Build configuration list for PBXNativeTarget "eyeAppDiagnostic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB653EEC1CAEDA760040AB46 /* Debug */,
+				CB653EED1CAEDA760040AB46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB653EE01CAEDA750040AB46 /* eyeAppDiagnostic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB653EE11CAEDA750040AB46 /* eyeAppDiagnostic.xcdatamodel */,
+			);
+			currentVersion = CB653EE11CAEDA750040AB46 /* eyeAppDiagnostic.xcdatamodel */;
+			path = eyeAppDiagnostic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CB653ECE1CAEDA750040AB46 /* Project object */;
+}
