@@ -47,7 +47,12 @@ class FormViewController: UIViewController {
         //usaremos el context para acceder a la base de datos
         let context:NSManagedObjectContext = appDel.managedObjectContext
         
-        
+        //Verifica que las entradas de las contraseñas sean iguales
+        if password != password2 {
+            passtxt.text = "Las contraseñas no son iguales"
+            bandera = false
+            validaciontxt.text = ""
+        }
         
         //hacemos una peticion para traer la entidad
         let request = NSFetchRequest(entityName: "Usuario")
@@ -60,13 +65,10 @@ class FormViewController: UIViewController {
                     validaciontxt.text = "El usuario con correo \(email) ya existe !!!"
                     bandera = false
                     //print(result.valueForKey("nombreUsuario")!)
+                    passtxt.text = ""
                     
                 }
                 
-                if password != password2 {
-                    passtxt.text = "Las contraseñas no son iguales"
-                    bandera = false
-                }
                 
                 
             }//end for
