@@ -16,6 +16,7 @@
 		CB59E5A61CADA10E00DE89D5 /* eyeApp.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59E5A51CADA10E00DE89D5 /* eyeApp.png */; };
 		CB59E5A81CADA39400DE89D5 /* facLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59E5A71CADA39400DE89D5 /* facLogin.png */; };
 		CB59E5AA1CADA3F800DE89D5 /* logIn.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59E5A91CADA3F800DE89D5 /* logIn.png */; };
+		CBB4F0771CAF3E0300DF4AE2 /* newViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB4F0761CAF3E0300DF4AE2 /* newViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CB59E5A51CADA10E00DE89D5 /* eyeApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyeApp.png; sourceTree = "<group>"; };
 		CB59E5A71CADA39400DE89D5 /* facLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facLogin.png; sourceTree = "<group>"; };
 		CB59E5A91CADA3F800DE89D5 /* logIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logIn.png; sourceTree = "<group>"; };
+		CBB4F0761CAF3E0300DF4AE2 /* newViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				CB59E5941CAD8AAE00DE89D5 /* LaunchScreen.storyboard */,
 				CB59E5971CAD8AAE00DE89D5 /* Info.plist */,
 				CB59E58F1CAD8AAE00DE89D5 /* sesionIOS.xcdatamodeld */,
+				CBB4F0761CAF3E0300DF4AE2 /* newViewController.swift */,
 			);
 			path = sesionIOS;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				CB59E58B1CAD8AAE00DE89D5 /* ViewController.swift in Sources */,
 				CB59E5911CAD8AAE00DE89D5 /* sesionIOS.xcdatamodeld in Sources */,
 				CB59E5891CAD8AAE00DE89D5 /* AppDelegate.swift in Sources */,
+				CBB4F0771CAF3E0300DF4AE2 /* newViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,7 @@
 				CB59E59C1CAD8AAE00DE89D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

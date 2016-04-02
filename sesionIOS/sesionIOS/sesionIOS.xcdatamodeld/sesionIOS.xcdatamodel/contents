@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15B42" minimumToolsVersion="Automatic">
     <entity name="Usuario" syncable="YES">
         <attribute name="edadUsuario" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="emailUsuario" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastResult" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombreUsuario" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="passwd2Usuario" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="passwdUsuario" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sexoUsuario" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Usuario" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="Usuario" positionX="-63" positionY="-18" width="128" height="150"/>
     </elements>
 </model>
