@@ -24,6 +24,9 @@
 		CBB4F04F1CAEFCB200DF4AE2 /* formUP@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB4F04D1CAEFCB200DF4AE2 /* formUP@2x.png */; };
 		CBB4F0521CAF108900DF4AE2 /* session@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB4F0501CAF108900DF4AE2 /* session@2x.png */; };
 		CBB4F0531CAF108900DF4AE2 /* sessionUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB4F0511CAF108900DF4AE2 /* sessionUp@2x.png */; };
+		CBB4F07A1CAF545300DF4AE2 /* logIn.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB4F0781CAF545300DF4AE2 /* logIn.png */; };
+		CBB4F07B1CAF545300DF4AE2 /* facLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB4F0791CAF545300DF4AE2 /* facLogin.png */; };
+		CBB4F07D1CAF576C00DF4AE2 /* sessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB4F07C1CAF576C00DF4AE2 /* sessionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		CBB4F04D1CAEFCB200DF4AE2 /* formUP@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "formUP@2x.png"; sourceTree = "<group>"; };
 		CBB4F0501CAF108900DF4AE2 /* session@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "session@2x.png"; sourceTree = "<group>"; };
 		CBB4F0511CAF108900DF4AE2 /* sessionUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sessionUp@2x.png"; sourceTree = "<group>"; };
+		CBB4F0781CAF545300DF4AE2 /* logIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logIn.png; sourceTree = "<group>"; };
+		CBB4F0791CAF545300DF4AE2 /* facLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facLogin.png; sourceTree = "<group>"; };
+		CBB4F07C1CAF576C00DF4AE2 /* sessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = sessionViewController.swift; path = ../sessionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +87,13 @@
 				CBB4F0541CAF109500DF4AE2 /* img */,
 				CB653ED91CAEDA750040AB46 /* AppDelegate.swift */,
 				CB653EDB1CAEDA750040AB46 /* ViewController.swift */,
+				CB653EF01CAEDDEF0040AB46 /* FormViewController.swift */,
+				CBB4F07C1CAF576C00DF4AE2 /* sessionViewController.swift */,
 				CB653EDD1CAEDA750040AB46 /* Main.storyboard */,
 				CB653EE31CAEDA750040AB46 /* Assets.xcassets */,
 				CB653EE51CAEDA760040AB46 /* LaunchScreen.storyboard */,
 				CB653EE81CAEDA760040AB46 /* Info.plist */,
 				CB653EE01CAEDA750040AB46 /* eyeAppDiagnostic.xcdatamodeld */,
-				CB653EF01CAEDDEF0040AB46 /* FormViewController.swift */,
 			);
 			path = eyeAppDiagnostic;
 			sourceTree = "<group>";
@@ -94,6 +101,8 @@
 		CBB4F0541CAF109500DF4AE2 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				CBB4F0781CAF545300DF4AE2 /* logIn.png */,
+				CBB4F0791CAF545300DF4AE2 /* facLogin.png */,
 				CBB4F0501CAF108900DF4AE2 /* session@2x.png */,
 				CBB4F0511CAF108900DF4AE2 /* sessionUp@2x.png */,
 				CBB4F0481CAEFA2A00DF4AE2 /* home@2x.png */,
@@ -175,10 +184,12 @@
 				CB653EF61CAEE0DF0040AB46 /* facesing.png in Resources */,
 				CB653EDF1CAEDA750040AB46 /* Main.storyboard in Resources */,
 				CBB4F0521CAF108900DF4AE2 /* session@2x.png in Resources */,
+				CBB4F07A1CAF545300DF4AE2 /* logIn.png in Resources */,
 				CBB4F04E1CAEFCB200DF4AE2 /* form@2x.png in Resources */,
 				CB653EF71CAEE0DF0040AB46 /* send.png in Resources */,
 				CBB4F04B1CAEFA2A00DF4AE2 /* upHome@2x.png in Resources */,
 				CBB4F0471CAEF2D200DF4AE2 /* minIcon.png in Resources */,
+				CBB4F07B1CAF545300DF4AE2 /* facLogin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB4F07D1CAF576C00DF4AE2 /* sessionViewController.swift in Sources */,
 				CB653EDC1CAEDA750040AB46 /* ViewController.swift in Sources */,
 				CB653EDA1CAEDA750040AB46 /* AppDelegate.swift in Sources */,
 				CB653EF11CAEDDEF0040AB46 /* FormViewController.swift in Sources */,

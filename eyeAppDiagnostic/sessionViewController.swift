@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
-//  sesionIOS
+//  sessionViewController.swift
+//  eyeAppDiagnostic
 //
-//  Created by Mac27 on 31/03/16.
+//  Created by Mac22 on 01/04/16.
 //  Copyright © 2016 vik. All rights reserved.
 //
 
@@ -10,47 +10,25 @@ import UIKit
 import CoreData
 
 
-class ViewController: UIViewController {
 
-    @IBOutlet weak var resultTxt: UILabel!
-    
-    @IBOutlet weak var result2txt: UILabel!
-    @IBOutlet weak var passwordtxt: UITextField!
+class sessionViewController: UIViewController {
+
     @IBOutlet weak var emailtxt: UITextField!
-    
+    @IBOutlet weak var passwordtxt: UITextField!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        //Add user in Core Data
-        // 1. import Core data
-        // 2. tener acceso a los metodos contenidos en appDelegate por medio de variable
-//        
-//        let appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-//        
-//        // 3. Debemos tener el elemento context ya que nos da acceso a las entedidades creadas 
-//        
-//         let context:NSManagedObjectContext = appDel.managedObjectContext
-//        // 4. accedemos a la bade de dato usando el context asignandolo a una variable
-////        let newUser = NSEntityDescription.insertNewObjectForEntityForName("Usuario", inManagedObjectContext: context)
-////        // 5. registramos un usuario en la entidad
-////        newUser.setValue("viktor", forKey: "nombreUsuario")
-////        newUser.setValue("masculino", forKey: "sexoUsuario")
-////        newUser.setValue("bbc@hotmail.com", forKey: "emailUsuario")
-////        newUser.setValue("1526", forKey: "passwdUsuario")
-////        newUser.setValue("1526", forKey: "passwd2Usuario")
-////        newUser.setValue("29", forKey: "edadUsuario")
-////        newUser.setValue("0", forKey: "lastResult")
-////        
-////        // 6 . Lo guardamos en el Core Data
-////        _ = try? context.save()
-//        //hacemos una peticion para traer la entidad
-        
-    }  //endViewLoad
 
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     
     
     @IBAction func loginUser(sender: AnyObject) {
@@ -75,7 +53,7 @@ class ViewController: UIViewController {
             for result in results {
                 //validamos si el Usuario ya tiene el mismo correo electronico
                 if let email = result.valueForKey("emailUsuario") as? String where email == mail,
-                let pass = result.valueForKey("passwdUsuario") as? String where pass == passwd
+                    let pass = result.valueForKey("passwdUsurio") as? String where pass == passwd
                 {
                     bandera = true
                     print("\(bandera)Se encontro al usuario \(email)")
@@ -96,7 +74,7 @@ class ViewController: UIViewController {
                 
                 
             } //endIf
-
+            
             
             if bandera == true{
                 
@@ -106,22 +84,22 @@ class ViewController: UIViewController {
                 let controller = storyboard.instantiateViewControllerWithIdentifier("viewSiguente") as UIViewController
                 // se anima y se trae en animacion haci arriba el NOMBRE_VIEW_CONTROLLER que se llamo
                 self.presentViewController(controller, animated: true, completion: nil)
-            
-            
+                
+                
             } //endif
             
             
             
         } //endif
-
         
-
+        
+        
         obtener()
         
-    } //endloginUser
+    }  //endLoginUser
     
     
-
+    
     func obtener(){
         // Da acceso a los metos utilizados para el core data
         let appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -140,16 +118,22 @@ class ViewController: UIViewController {
         
     } //end obtener
     
-    
-    
-    
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
+    
+    
+    
+    
+    
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-

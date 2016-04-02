@@ -49,9 +49,14 @@ class FormViewController: UIViewController {
         
         //Verifica que las entradas de las contraseñas sean iguales
         if password != password2 {
-            passtxt.text = "Las contraseñas no son iguales"
+            //se crea un objeto de la clase UIAlertController iniciando el estilo con el parametro preferredStyle
+            let alertView = UIAlertController (title: "AVISO", message: "Las contraseñas son diferentes", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            //Le indicamos que vamos usar un alertView, usando un elemento de la numeracion del UIAlertControllerStyle
+            alertView.addAction(UIAlertAction (title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alertView, animated: false, completion: nil)
             bandera = false
-            validaciontxt.text = ""
+            
         }
         
         //hacemos una peticion para traer la entidad
@@ -62,8 +67,20 @@ class FormViewController: UIViewController {
                 //validamos si el Usuario ya tiene el mismo correo electronico
                 if let email = result.valueForKey("emailUsuario") as? String where email == correo
                 {
-                    validaciontxt.text = "El usuario con correo \(email) ya existe !!!"
+                    
                     bandera = false
+                    
+                    
+                    //se crea un objeto de la clase UIAlertController iniciando el estilo con el parametro preferredStyle
+                    let alertView = UIAlertController (title: "AVISO", message: "El usuario con correo \(email) ya existe !!!", preferredStyle: UIAlertControllerStyle.Alert)
+                    
+                    //Le indicamos que vamos usar un alertView, usando un elemento de la numeracion del UIAlertControllerStyle
+                    alertView.addAction(UIAlertAction (title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                    self.presentViewController(alertView, animated: false, completion: nil)
+
+                    
+                    
+                    
                     //print(result.valueForKey("nombreUsuario")!)
                     passtxt.text = ""
                     
@@ -91,7 +108,16 @@ class FormViewController: UIViewController {
                 //Lo guardamos en Core data
                 _ = try? context.save()
                 //print(results.valueForKey("nombreUsuario")!)
-                validaciontxt.text = "Registro Exitoso"
+                
+                
+                //se crea un objeto de la clase UIAlertController iniciando el estilo con el parametro preferredStyle
+                let alertView = UIAlertController (title: "AVISO", message: "Registro Exitoso", preferredStyle: UIAlertControllerStyle.Alert)
+                
+                //Le indicamos que vamos usar un alertView, usando un elemento de la numeracion del UIAlertControllerStyle
+                alertView.addAction(UIAlertAction (title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alertView, animated: false, completion: nil)
+                
+               
                 limpiar()
                 
                 
@@ -117,7 +143,16 @@ class FormViewController: UIViewController {
             //Lo guardamos en Core data
             _ = try? context.save()
             //print(results.valueForKey("nombreUsuario")!)
-            validaciontxt.text = "Registro Exitoso"
+            
+            
+            //se crea un objeto de la clase UIAlertController iniciando el estilo con el parametro preferredStyle
+            let alertView = UIAlertController (title: "AVISO", message: "Registro Exitoso", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            //Le indicamos que vamos usar un alertView, usando un elemento de la numeracion del UIAlertControllerStyle
+            alertView.addAction(UIAlertAction (title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alertView, animated: false, completion: nil)
+            
+
             limpiar()
             
         }//end else
